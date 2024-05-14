@@ -53,6 +53,7 @@ async def scan_database_endpoint(settings: ScanSettings):
    # print(output)
 
     return [DatabaseItem(database=item[0], table=item[1], field=item[2], PIILevel=item[3], Class=item[4]) for item in output]
+  
     
 
 if __name__ == "__main__":
